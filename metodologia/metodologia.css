@@ -1,0 +1,457 @@
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 232, 232);
+    font-family: inter;
+}
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+
+        "metodologia__title"
+        "metodologia"
+
+        "footer";
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto;
+    }
+    header {
+        grid-area: header;
+        background-color: rgba(250, 250, 250, 0.924);
+        box-shadow: 0px 2px 30px #4d4d4d3b;
+        font-family: inter;
+        font-size: 14px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75px;
+    }
+    header a {
+        color: rgb(25, 37, 65);
+        text-decoration: none;
+    }
+    
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .inicio__logo {
+        width: 100px;
+        padding-left: 100px;
+    }
+    .inicio__menu ul {
+        margin: 0;
+        padding: 22px 0;
+        padding-right: 100px;
+        list-style: none;
+    }
+    
+    .inicio__menu ul li {
+        display: inline-block;
+    }
+    
+    .inicio__menu ul li a {
+        display: block;
+        padding: 5px;
+        transition: all 0.3s linear;
+    }
+    .inicio__menu ul li a:hover {
+        color: rgb(7, 5, 24);
+        font-weight: 500;
+    }
+    .icon__behance{
+        width: 30px;
+        border-radius: 30%;
+    
+    }
+    .icon__linkedin{
+        width: 30px;
+        border-radius: 30%;
+    }
+
+
+
+    .metodologia__title {
+        grid-area: metodologia__title;
+        padding-top: 150px;
+        font-size: 22px;
+        font-style: normal;
+        letter-spacing: 7px;
+        color: rgba(21, 21, 54, 0.545);
+        display: flex;
+        justify-content: center;
+    }
+    .metodologia {
+        grid-area: metodologia;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    h4 {
+        font-size: 14px;
+
+    }
+    .metodologia__inv {
+        width: 300px;
+        padding-top: 30px;
+        text-align: center;
+    
+    }
+    .metodologia__prop {
+        width: 300px;
+        padding-top: 30px;
+        text-align: center;
+    
+       
+    }
+    .metodologia__des {
+        width: 300px;
+        padding-top: 30px;
+        text-align: center;
+       
+    
+    }
+
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        background-color: rgb(3, 3, 25);
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    h5 {
+        font-size: 16px;
+        height:0px;
+    }
+    .pie__izq {
+        padding-top: 30px;
+    }
+
+    .ul__datos {
+        list-style: none;
+        font-size: 13px;
+        color: rgb(111, 111, 111);
+        text-align: center;
+    
+    }
+    .ul__title {
+        color: rgb(248, 248, 248);
+        font-size: 15px;
+        padding-bottom: 7px;
+        
+    }
+    .pie__contacto {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pie__dis {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .punto {
+        width: 12px;
+        height: 12px;
+        background-color: rgb(0, 255, 234);
+        border-radius: 50%;
+
+    }
+
+    .pie__der {
+        padding-top: 50px;
+        
+    }
+    h2 {
+        font-size: 30px;
+
+    }
+    .pie__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .pie__nombre{
+        width: 450px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 11px;
+    }
+    .pie__correo {
+        width: 450px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 11px;
+    }
+    .pie__msj {
+        width: 450px;
+        height: 110px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 11px;
+    }
+
+    .pie_pagina {
+        margin-bottom: 0;
+        margin-left: 0;
+        
+    }
+    .piedepagina__refresh{
+        font-family: poppins regular;
+        font-size: 14px;
+        list-style: none;
+        padding-top: 25px;
+        border-top: 1px solid rgb(14, 11, 34);
+    }
+    .piedepagina__terminos{
+        font-family: poppins Extralight;
+        font-size: 12px;
+        padding-bottom: 25px;
+        list-style: none;
+    }
+}
+    /* vista desktop */
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+
+        "metodologia__title"
+        "metodologia"
+
+        "footer";
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header {
+        grid-area: header;
+        background-color: rgba(250, 250, 250, 0.924);
+        box-shadow: 0px 2px 30px #4d4d4d3b;
+        font-family: inter;
+        font-size: 14px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75px;
+    }
+    header a {
+        color: rgb(25, 37, 65);
+        text-decoration: none;
+    }
+    
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .inicio__logo {
+        width: 100px;
+        padding-left: 100px;
+    }
+    .inicio__menu ul {
+        margin: 0;
+        padding: 22px 0;
+        padding-right: 100px;
+        list-style: none;
+    }
+    
+    .inicio__menu ul li {
+        display: inline-block;
+    }
+    
+    .inicio__menu ul li a {
+        display: block;
+        padding: 5px;
+        transition: all 0.3s linear;
+    }
+    .inicio__menu ul li a:hover {
+        color: rgb(7, 5, 24);
+        font-weight: 500;
+    }
+    .icon__behance{
+        width: 30px;
+        border-radius: 30%;
+    
+    }
+    .icon__linkedin{
+        width: 30px;
+        border-radius: 30%;
+    }
+
+
+    .metodologia__title {
+        grid-area: metodologia__title;
+        padding-top: 160px;
+        font-size: 35px;
+        font-style: normal;
+        letter-spacing: 10px;
+        color: rgba(21, 21, 54, 0.545);
+        display: flex;
+        justify-content: center;
+    }
+    .metodologia {
+        grid-area: metodologia;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 150px;
+    }
+    h4 {
+        font-size: 16px;
+
+    }
+    .metodologia__inv {
+        width: 300px;
+        padding-top: 30px;
+        text-align: center;
+    
+    }
+    .metodologia__prop {
+        width: 300px;
+        padding-top: 30px;
+        text-align: center;
+    
+       
+    }
+    .metodologia__des {
+        width: 300px;
+        padding-top: 30px;
+        text-align: center;
+    
+    }
+
+
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        background-color: rgb(3, 3, 25);
+        color: aliceblue;
+        
+    }
+    .footer__info {
+        display: flex;
+        flex-direction: 2 column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .pie__izq {
+        padding-top: 30px;
+    }
+    .ul__datos {
+        list-style: none;
+        font-size: 14px;
+        color: rgb(111, 111, 111);
+    
+    }
+    .ul__title {
+        color: rgb(248, 248, 248);
+        font-size: 16px;
+        padding-bottom: 7px;
+        
+    }
+    .pie__contacto {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .pie__dis {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .punto {
+        width: 12px;
+        height: 12px;
+        background-color: rgb(0, 255, 234);
+        border-radius: 50%;
+
+    }
+
+    .pie__der {
+        padding-top: 50px;
+        
+    }
+    h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    .pie__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .pie__nombre{
+        width: 500px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .pie__correo {
+        width: 500px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .pie__msj {
+        width: 500px;
+        height: 160px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .pie_pagina {
+        margin-bottom: 0;
+        margin-left: 0;
+        
+    }
+    .piedepagina__refresh{
+        font-family: poppins regular;
+        font-size: 14px;
+        list-style: none;
+        padding-top: 25px;
+        border-top: 1px solid rgb(14, 11, 34);
+        text-align: center;
+    }
+    .piedepagina__terminos{
+        font-family: poppins Extralight;
+        font-size: 12px;
+        padding-bottom: 25px;
+        list-style: none;
+        text-align: center;
+    }
+}

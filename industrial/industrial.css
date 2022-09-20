@@ -1,0 +1,550 @@
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 232, 232);
+    font-family: inter;
+}
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "proyectos__title"
+        "presentacion"
+        "trabajos"
+        "metodologia__mas"
+        "footer";
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    header {
+        grid-area: header;
+        background-color: rgba(250, 250, 250, 0.924);
+        box-shadow: 0px 2px 30px #4d4d4d3b;
+        font-family: inter;
+        font-size: 14px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75px;
+    }
+    header a {
+        color: rgb(25, 37, 65);
+        text-decoration: none;
+    }
+    
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .inicio__logo {
+        width: 100px;
+        padding-left: 100px;
+    }
+    .inicio__menu ul {
+        margin: 0;
+        padding: 22px 0;
+        padding-right: 100px;
+        list-style: none;
+    }
+    
+    .inicio__menu ul li {
+        display: inline-block;
+    }
+    
+    .inicio__menu ul li a {
+        display: block;
+        padding: 5px;
+        transition: all 0.3s linear;
+    }
+    .inicio__menu ul li a:hover {
+        color: rgb(7, 5, 24);
+        font-weight: 500;
+    }
+    .icon__behance{
+        width: 30px;
+        border-radius: 30%;
+    
+    }
+    .icon__linkedin{
+        width: 30px;
+        border-radius: 30%;
+    }
+    h1 {        
+        padding-top: 100px;
+        font-size: 50px;
+        color: rgba(21, 21, 47, 0.3);
+        display: flex;
+        justify-content: center;
+
+    }
+    .proyectos__title {
+        grid-area: proyectos__title
+    }
+    .presentacion__title {
+        color: rgba(21, 21, 54, 0.545);
+        font-size: 20px;
+        font-style: normal;
+        letter-spacing: 5px;
+        padding-top: 50px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    .presentacion {
+        grid-area: presentacion;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .presentacion__div {
+        text-align: center;
+    }
+    .presentacion__img {
+        width: 400px
+        
+    }
+
+    .diseño {
+        grid-area: trabajos;
+        padding-top: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    h4 {
+        font-size: 14px;
+
+    }
+    .diseño__img {
+        width: 300px;
+    }
+    .diseño__01 {
+        width: 300px;
+        padding-top: 80px;
+        text-align: center;
+    
+    }
+    
+
+    .metodologia__mas {
+        grid-area: metodologia__mas;
+        padding-top: 100px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+
+    .conoce {
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+        color: rgb(241, 241, 241);
+        background-image: linear-gradient(rgb(4, 219, 165),rgb(5, 187, 196));
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0px 2px 30px #4d4d4d3b;
+        transition: all 0.3s linear;
+        text-align: center;
+    }
+    .conoce:hover {
+        color: rgb(7, 5, 24);
+        font-size: 11,5px;
+    }
+
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        background-color: rgb(3, 3, 25);
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    h5 {
+        font-size: 16px;
+        height:0px;
+    }
+    .pie__izq {
+        padding-top: 30px;
+    }
+
+    .ul__datos {
+        list-style: none;
+        font-size: 13px;
+        color: rgb(111, 111, 111);
+        text-align: center;
+    
+    }
+    .ul__title {
+        color: rgb(248, 248, 248);
+        font-size: 15px;
+        padding-bottom: 7px;
+        
+    }
+    .pie__contacto {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pie__dis {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .punto {
+        width: 12px;
+        height: 12px;
+        background-color: rgb(0, 255, 234);
+        border-radius: 50%;
+
+    }
+
+    .pie__der {
+        padding-top: 50px;
+        
+    }
+    h2 {
+        font-size: 30px;
+
+    }
+    .pie__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .pie__nombre{
+        width: 450px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 11px;
+    }
+    .pie__correo {
+        width: 450px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 11px;
+    }
+    .pie__msj {
+        width: 450px;
+        height: 110px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 11px;
+    }
+
+    .pie_pagina {
+        margin-bottom: 0;
+        margin-left: 0;
+        
+    }
+    .piedepagina__refresh{
+        font-family: poppins regular;
+        font-size: 14px;
+        list-style: none;
+        padding-top: 25px;
+        border-top: 1px solid rgb(14, 11, 34);
+    }
+    .piedepagina__terminos{
+        font-family: poppins Extralight;
+        font-size: 12px;
+        padding-bottom: 25px;
+        list-style: none;
+    }
+}
+    /* vista desktop */
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "proyectos__title"
+        "presentacion"
+        "trabajos"
+        "metodologia__mas"
+        "footer";
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+    header {
+        grid-area: header;
+        background-color: rgba(250, 250, 250, 0.924);
+        box-shadow: 0px 2px 30px #4d4d4d3b;
+        font-family: inter;
+        font-size: 14px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 75px;
+    }
+    header a {
+        color: rgb(25, 37, 65);
+        text-decoration: none;
+    }
+    
+    .inicio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .inicio__logo {
+        width: 100px;
+        padding-left: 100px;
+    }
+    .inicio__menu ul {
+        margin: 0;
+        padding: 22px 0;
+        padding-right: 100px;
+        list-style: none;
+    }
+    
+    .inicio__menu ul li {
+        display: inline-block;
+    }
+    
+    .inicio__menu ul li a {
+        display: block;
+        padding: 5px;
+        transition: all 0.3s linear;
+    }
+    .inicio__menu ul li a:hover {
+        color: rgb(7, 5, 24);
+        font-weight: 500;
+    }
+    .icon__behance{
+        width: 30px;
+        border-radius: 30%;
+    
+    }
+    .icon__linkedin{
+        width: 30px;
+        border-radius: 30%;
+    }
+
+
+
+    .proyectos__title {
+        grid-area: proyectos__title;
+        padding-top: 20px;
+        height: 17px;
+        font-size: 105px;
+        color: rgba(21, 21, 47, 0.119);
+        display: flex;
+        justify-content: center;
+    }
+    .presentacion__title {
+        color: rgba(21, 21, 54, 0.545);
+        font-size: 25px;
+        font-style: normal;
+        letter-spacing: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .presentacion {
+        grid-area: presentacion;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+     
+    }
+    .presentacion__div {
+        text-align: center;
+    }
+    .presentacion__img {
+        width: 500px;
+        box-shadow: 0px 2px 30px #4d4d4d41;
+        
+    }
+    .diseño {
+        grid-area: trabajos;
+        padding-top: 100px;
+        height: auto;
+	    width: 100%;
+        display: flex;
+	    flex-direction: row;
+	    justify-content: space-evenly;
+	    flex-wrap: wrap;
+        
+	    
+        
+    }
+    h4 {
+        font-size: 16px;
+
+    }
+    .diseño__img {
+        width: 300px;
+    }
+    .diseño__01 {
+        width: 300px;
+        padding-top: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+
+    
+    }
+
+    .metodologia__mas {
+        grid-area: metodologia__mas;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px; 
+        padding-bottom: 150px;   
+    }
+
+    .conoce {
+        width: 125px;
+        height: 40px;
+        font-size: 13px;
+        color: rgb(241, 241, 241);
+        background-image: linear-gradient(rgb(4, 219, 165),rgb(5, 187, 196));
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0px 2px 30px #4d4d4d3b;
+        transition: all 0.3s linear;
+        text-align: center;
+
+    }
+    .conoce:hover {
+        color: rgb(13, 4, 95);
+        font-size: 11,5px;
+    }
+
+
+
+
+    footer {
+        grid-area: footer;
+        width: 100%;
+        background-color: rgb(3, 3, 25);
+        color: aliceblue;
+        
+    }
+    .footer__info {
+        display: flex;
+        flex-direction: 2 column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .pie__izq {
+        padding-top: 30px;
+    }
+    .ul__datos {
+        list-style: none;
+        font-size: 14px;
+        color: rgb(111, 111, 111);
+    
+    }
+    .ul__title {
+        color: rgb(248, 248, 248);
+        font-size: 16px;
+        padding-bottom: 7px;
+        
+    }
+    .pie__contacto {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .pie__dis {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .punto {
+        width: 12px;
+        height: 12px;
+        background-color: rgb(0, 255, 234);
+        border-radius: 50%;
+
+    }
+
+    .pie__der {
+        padding-top: 50px;
+        
+    }
+    h2 {
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    .pie__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .pie__nombre{
+        width: 500px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .pie__correo {
+        width: 500px;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .pie__msj {
+        width: 500px;
+        height: 160px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .pie_pagina {
+        margin-bottom: 0;
+        margin-left: 0;
+        
+    }
+    .piedepagina__refresh{
+        font-family: poppins regular;
+        font-size: 14px;
+        list-style: none;
+        padding-top: 25px;
+        border-top: 1px solid rgb(14, 11, 34);
+        text-align: center;
+    }
+    .piedepagina__terminos{
+        font-family: poppins Extralight;
+        font-size: 12px;
+        padding-bottom: 25px;
+        list-style: none;
+        text-align: center;
+    }
+}
